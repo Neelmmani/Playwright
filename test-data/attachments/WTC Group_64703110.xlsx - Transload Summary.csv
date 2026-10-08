@@ -1,0 +1,13 @@
+,,,,,Transload Summary,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Customer:,COLUMBIA GRAIN,Shipper,COLUMBIA GRAIN,Customer Ref #:,CL-1047386-1,,,,,,,,,,
+Forwarder:,WESTERN TRANSLOADING CORPORATION,WTC Order #:,WTCTO251229011,Shipper Ref:,,,,,,,,,,,
+Booking:,64703110,Origin,VANCOUVER (CAVAN),L.R.D.:,2026-01-06,,,,,,,,,,
+Vessel/Voyage:,MSC FLORA / 601,Destination:,KARACHI (PKKHI),E.T.D.:,2026-01-08,,,,,,,,,,
+Line,MSC,Delivered To:,Vanterm,Transload Service:,BAG,,,,,,,,,,
+Total Equipment: 3,Empty: 0,Outstanding: 0,Partially Loaded: 0,Loaded: 3,Delivered: 0,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Equipment No.,Source Unit,Lot Number,Quantity,Package Weight,Weight Unit,Content Type,Cargo Weight (KG),Pack Date,Commodity,Grade,Short,Loss,Cause,Repair,Organic
+MSBU1236924,TBOX630309,CL-1047386-1,900,25.00,KG,BAG,22500.00,2026-01-02,CHICK PEAS,,0,0,,0,No
+MSDU1903881,TBOX630309,CL-1047386-1,897,25.00,KG,BAG,22425.00,2026-01-02,CHICK PEAS,,0,0,,0,No
+MSNU1834245,TBOX630309,CL-1047386-1,900,25.00,KG,BAG,22500.00,2026-01-02,CHICK PEAS,,0,0,,0,No

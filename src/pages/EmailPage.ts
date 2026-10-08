@@ -56,6 +56,46 @@ async enterFromDate(date: string) {
   }).fill(date);
 }
 
+async enterFromDate1() {
+
+  const today = new Date();
+
+  const currentDay = today.getDate().toString();
+
+  await this.page
+    .getByRole('button', { name: 'Choose date' })
+    .first()
+    .click();
+
+  await this.page
+    .getByRole('gridcell', {
+      name: currentDay,
+      exact: true
+    })
+    .click();
+
+}
+
+async enterToDate1() {
+
+  const today = new Date();
+
+  const currentDay = today.getDate().toString();
+
+  await this.page
+    .getByRole('button', { name: 'Choose date' })
+    .nth(1)
+    .click();
+
+  await this.page
+    .getByRole('gridcell', {
+      name: currentDay,
+      exact: true
+    })
+    .click();
+
+}
+
 async enterToDate(date: string) {
   await this.page.getByRole('textbox', {
     name: 'To Date'

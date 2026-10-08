@@ -1,18 +1,18 @@
-import { Page } from '@playwright/test';
+  import { Page } from '@playwright/test';
 
-export class BasePage {
+  export class BasePage {
 
-  constructor(protected page: Page) {}
+    constructor(protected page: Page) {}
 
-  async navigate(url: string) {
-    await this.page.goto(url);
+    async navigate(url: string) {
+      await this.page.goto(url);
+    }
+
+    async getTitle() {
+      return await this.page.title();
+    }
+
+    async wait(seconds: number) {
+      await this.page.waitForTimeout(seconds * 1000);
+    }
   }
-
-  async getTitle() {
-    return await this.page.title();
-  }
-
-  async wait(seconds: number) {
-    await this.page.waitForTimeout(seconds * 1000);
-  }
-}

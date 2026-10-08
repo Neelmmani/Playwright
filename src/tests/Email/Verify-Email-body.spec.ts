@@ -1,5 +1,6 @@
 import { test, expect } from '../../fixtures/baseFixture';
 import { EmailPage } from '../../pages/EmailPage';
+import { ExcelUtil } from '../../utils/ExcelUtils';
 
 test.beforeEach(async ({ page }) => {
 
@@ -36,7 +37,7 @@ test('TC_02 Download Attachment', async ({ page }) => {
   const emailPage = new EmailPage(page);
 
   await emailPage.searchBookingId(
-    '193CA0927960'
+    '64703110'
   );
 
   await emailPage.clickSearch();
@@ -48,6 +49,9 @@ test('TC_02 Download Attachment', async ({ page }) => {
     await emailPage.downloadAttachment();
 
   expect(download).toBeTruthy();
+
+  const filePath = await download.path();
+
 
 });
 
@@ -74,6 +78,8 @@ async ({ page }) => {
       await emailPage.downloadAttachment();
 
     expect(download).toBeTruthy();
+
+    const filePath = await download.path();
 
     break;
   }
